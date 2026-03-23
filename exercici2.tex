@@ -1,0 +1,55 @@
+\section{Ex.2: Complexos}
+Siguin $z_1$ i $z_2$ les arrels d'un polinomi $p(x)=x^2+ax+b$ llavors podem asegurar que si
+$$z=\alpha+\beta i \Rightarrow \overline{z}=\alpha-\beta i$$ o equivalentment podem dir que:
+$$z=|z|e^{i \theta}\Rightarrow \overline{z}=|z|e^{-i \theta}$$
+Per tant
+
+\begin{equation*}
+z_1^n + z_2^n=z^n+\overline{z}^n=(|z|e^{i \theta})^n+(|z|e^{-i \theta})^n
+\end{equation*}
+
+Ara, aplicant la fórmula de De Moivre sabem que
+
+\begin{equation*}
+(|z|e^{i \theta})^n+(|z|e^{-i \theta})^n=|z|e^{in \theta}+|z|e^{-in \theta}
+\end{equation*}
+
+Extreim factor comú $|z|$
+\begin{equation*}
+|z|e^{in \theta}+|z|e^{-in \theta}=|z|(e^{in \theta}+ e^{-in \theta})
+\end{equation*}
+
+Ara, aplicam la fórmula d'Euler
+\begin{equation*}
+|z|(e^{in \theta}+ e^{-in \theta})=|z|(\cos (n \theta) + (\sin (n \theta))i + \cos (-n \theta) + (\sin (-n \theta))i
+\end{equation*}
+
+I per propietats del sinus i del cosinus sabem que $\cos(-x)=\cos(x)$ i $\sin(-x)=-\sin(x)$. Per això podem assegurar que
+\begin{equation*}
+|z|(\cos (n \theta) + (\sin (n \theta))i + \cos (-n \theta) + (\sin (-n \theta))i=|z|(\cos (n \theta) + (\sin (n \theta))i + \cos (n \theta) - (\sin (n \theta))i)
+\end{equation*}
+\begin{equation*}
+|z|(\cos (n \theta) + (\sin (n \theta))i + \cos (n \theta) - (\sin (n \theta))i=2|z|\cos (n \theta)
+\end{equation*}
+
+Es a dir que
+\begin{equation*}
+z_1^n + z_2^n=z^n+\overline{z}^n=2|z|\cos (n \theta)
+\label{eq:l'equació}
+\end{equation*}
+
+Que evidentment es un nombre real, ja que $|z|\in \mathbb{R}$ i $\cos(n \theta)\in \mathbb{R}$
+
+Ara si 
+\begin{equation*}
+x^2-2x+2=0 \Rightarrow z=1+i \wedge \overline{z}=1-i
+\end{equation*}
+Que en forma exponencial són:
+\begin{equation*}
+z=|1+i|e^{i \arctan(\frac{1}{1})} \wedge \overline{z}=|1+i|e^{-i \arctan(\frac{1}{1})} \Longleftrightarrow z=\sqrt{2}e^{i\frac{\pi}{4}} \wedge \overline{z}=\sqrt{2}e^{-i\frac{\pi}{4}}
+\end{equation*}
+
+Per tant com hem vist a l'equació \ref{eq:l'equació}
+\begin{equation*}
+(1+i)^n+(1-i)^n=2\sqrt{2}\cos (n\frac{\pi}{4})
+\end{equation*}
