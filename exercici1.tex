@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{mathrsfs}
+\usepackage{eucal}
+\usepackage{boondox-cal}
+\usepackage{amsmath}
+\begin{document}
+\section{Inequacions}
+\begin{enumerate}
+\item Trobau el conjunt de punts que satisfà la següent equació \begin{equation}
+|x - |x-2|| < 3
+\end{equation}
+Per una proposició, tenim que $$|x - |x-2|| < 3 \Leftrightarrow - 3 < x - |x-2| < 3$$. Suposem dos casos:
+\begin{itemize}
+\item $x \geq 2$. Llavors: $$|x - |x-2|| < 3 \Leftrightarrow - 3 < x - |x-2| < 3 \Leftrightarrow - 3 < x - x + 2 < 3 \Leftrightarrow - 3 < 2 < 3$$ 
+Aleshores, quan $x \geq 2$, es compleix sempre la desigualtat.
+\item $x < 2$. Llavors: $$|x - |x-2|| < 3 \Leftrightarrow - 3 < x - |x-2| < 3 \Leftrightarrow - 3 < x +  x - 2 < 3 $$$$ \Leftrightarrow - 3 + 2 < 2x < 3 + 2 \Leftrightarrow -1 < 2x < 5$$
+Aleshores, la desigualtat es compleix quan $x \in (- \frac{1}{2}, \frac{5}{2})\wedge x < 2$, és a dir, quan $x \in (- \frac{1}{2}, 2)$
+\end{itemize}
+Per tant, la solució de la inequació serà la unió dels dos cassos: $x \in (- \frac{1}{2}, 2) \cup [2, + \infty)\Leftrightarrow x \in (- \frac{1}{2}, + \infty)$
+\item Determinau el conjunt de punts que satisfà la següent inequació en funció de $a \in \mathbb{R}$. 
+\begin{equation}
+x^2 - ax \leq 2
+\end{equation}
+Sabem que $x^2 - ax \leq 2 \Leftrightarrow x^2 - ax - 2 \leq 0$. Llavors, calculem les arrels de $p(x) = x^2 - ax - 2$.
+$$x = \frac{a \pm \sqrt{a^2 + 8}}{2} \Rightarrow x_1 = \frac{a - \sqrt{a^2 + 8}}{2} \wedge x_2 = \frac{a + \sqrt{a^2 + 8}}{2}$$
+Ara estudiem el signe de $p(x)$. Fixem-nos que $0 \in (x_1, x_2)$, ja que $x_1 = \frac{a - \sqrt{a^2 + 8}}{2} < \frac{a - \sqrt{a^2}}{2} \leq \frac{a - a}{2} = 0 \wedge x_2 = \frac{a + \sqrt{a^2 + 8}}{2} > \frac{a + \sqrt{a^2}}{2} = \frac{a + |a|}{2} \geq \frac{a - a}{2} = 0$. Aleshores, com $p(0) = -2 < 0$, tenim que $p(x) < 0 \forall x \in (x_1, x_2)$. De fet, aquesta és la solució que cercam, ja que el polinomi es tracta d'una paràbola i a partir de l'estudi en $(x_1, x_2)$ podem deduir que per a $x<x_1 \vee x > x_2$, el signe serà positiu. Llavors, la solució és $x \in (\frac{a - \sqrt{a^2 + 8}}{2}, \frac{a + \sqrt{a^2 + 8}}{2})$
+\end{enumerate}
+\end{document}
